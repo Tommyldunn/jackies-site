@@ -32,8 +32,13 @@ var App = React.createClass({
 
   render: function() {
     return (
-      <div>
-        <a className="" onClick={this.openModal}><img src="css/images/cheer.png" /></a>
+      <div className="wrap">
+        <a className="" onClick={this.openModal}><img src="css/images/cheer.png" />
+          <div className="product-hover">
+        <span className="client">Old Navy</span>
+        <span className="title">Cheermageddon</span>
+      </div>
+        </a>
         <Modal className="modal"
           closeTimeoutMS={150}
           isOpen={this.state.modalIsOpen}

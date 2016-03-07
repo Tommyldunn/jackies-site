@@ -22,7 +22,7 @@ section {
 }
 
 .intro {
-  height: 100vh;
+  height: 90vh;
 }
 
 .content {
@@ -73,7 +73,47 @@ a {
     width: 100%;
   }
 }
+a {
+display: block;
+position: relative;
+.hover-on & {
+  &:focus, &:hover {
+    .product-hover {
+        opacity: 1;
+       }
+    }
+  }
+}
 
+.product-hover {
+  background: #333;
+  opacity: 1;
+  position: absolute;
+  left: 15px;
+  bottom: 15px;
+  color: #fff;
+  -webkit-transition: opacity 0.2s linear;
+	-moz-transition: opacity 0.2s linear;
+	-ms-transition: opacity 0.2s linear;
+	-o-transition: opacity 0.2s linear;;
+	transition: opacity 0.2s linear;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+
+  .hover-on & {
+    //Hide after mousemove fires
+    opacity: 0;
+  }
+}
+.client {
+  display: block;
+  color: #FE4B74;
+  }
+  .title {
+    font-weight: 200;
+  }
 footer {
   padding: 1% 5%;
   text-align:center;
