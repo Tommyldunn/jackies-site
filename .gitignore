@@ -1,0 +1,8 @@
+node_modules
+.DS_Store
+history.lock
+build/css
+build/app.min.js
+build/main.js
+build/vendor
+build

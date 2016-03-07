@@ -1,0 +1,110 @@
+@import 'bootstrap.scss';
+@import 'base/variables.scss';
+@import "bootstrap/variables";
+@import "bootstrap/mixins";
+@import "bootstrap/navs";
+
+// Core CSS
+@import "bootstrap/grid";
+@import "bootstrap/tables";
+
+
+
+body {
+	font-family: 'Proxima Nova';
+	font-weight:300;
+	font-size: 16px;
+	line-height: 30px;
+	color: $grey_100;
+  background: url(../css/images/cup.png) no-repeat;
+  background-size: cover;
+	}
+	.container-fluid {
+		margin: 0 auto;
+		padding: 60px;
+	}
+	.bar {
+	  width: 100%;
+	  height: 60px;
+	  background: white;
+		text-align: center;
+		padding-bottom: 50px;
+		img {
+			width: 10%;
+			padding-top: 15px;
+			padding-bottom: 0px;
+		}
+	}
+
+      form {
+      display: block;
+      margin: 0 auto;
+      padding: 30px 30px;
+      }
+
+input {
+	border-radius: 0 !important;
+  background: transparent !important;
+  float: left;
+}
+
+textarea {
+	  margin-bottom: 50px;
+    background: transparent !important;
+    border-radius: 0 !important;
+    min-height: 150px;
+    &:active {
+    }
+  }
+  .nav {
+    .bk {
+        width: 4%;
+        height: 45px;
+        position: absolute;
+    }
+  }
+  legend {
+    font-size: 38px;
+    font-weight: bold;
+  }
+  #name,
+  #msg,
+  #email {
+    margin-bottom: 10px;
+    height: 45px;
+    width: 50%;
+    margin-left: 3em;
+      border: 0 !important;
+  }
+
+  .fa {
+    float: left;
+    margin-top: 15px;
+  width: (18em / 14);
+  text-align: center;
+  padding: 0em 1em 1em 1em;
+  color: $site_blue;;
+}
+
+
+ button,
+ .btn {
+	cursor: pointer;
+	width: 100%;
+	border: 1px solid $site_blue;
+	background: transparent;
+	color: $site_blue;
+	margin:0 0 5px;
+	padding: 10px;
+	font-size: 16px;
+	text-transform: uppercase;
+  border-radius: 0;
+ &:hover {
+	background: transparent;
+	color: $site_blue;
+	border: 1px solid $site_blue;
+	-webkit-transition:background 0.3s ease-in-out;
+	-moz-transition:background 0.3s ease-in-out;
+	transition:background-color 0.3s ease-in-out;
+	}
+}
