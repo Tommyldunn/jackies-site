@@ -1,10 +1,10 @@
 {
-  "name": "Doable-Innovation",
+  "name": "Jackies-site",
   "version": "0.0.1",
   "scripts": {
     "gulp": "gulp"
   },
-  "description": "Consumer Facing Site For Doable",
+  "description": "Jackies-site",
   "main": "gulpfile.js",
   "repository": {
     "type": "git",

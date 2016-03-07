@@ -48,13 +48,14 @@ h2 {
 p {
   font-size: 1.5em;
   font-weight: 500;
-  color: #C3CAD9;
+  color: white;
 }
 
 a {
   font-weight: 700;
   color: #373B44;
   position: relative;
+  cursor: pointer;
 
   &:hover{
     opacity: 0.8;
@@ -65,10 +66,10 @@ a {
   }
 }
 #portfolio {
-  padding-top: 50px;
-  padding-bottom: 50px;
-  padding-left: 50px;
-  padding-right: 50px;
+  .row {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  }
   img {
     width: 100%;
   }
@@ -113,6 +114,32 @@ position: relative;
   }
   .title {
     font-weight: 200;
+  }
+  #about {
+    height: 50vh;
+    .row {
+    }
+
+    img {
+      height: 250px;
+      margin-top: 50px;
+      margin-left: 50px;
+    }
+    p {
+      font-size: 1em;
+    }
+    .text {
+      margin-top: 50px;
+      margin-right: 50px;
+    }
+  }
+  i {
+    font-size: .9em;
+    color: #C3CAD9;
+  }
+  #resume {
+    margin: 0 auto;
+    text-align: center;
   }
 footer {
   padding: 1% 5%;

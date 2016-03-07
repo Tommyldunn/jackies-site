@@ -22,13 +22,13 @@ var Portfolio = React.createClass({
           <div className="col-md-4" id="JordanKnight"></div>
         </div>
         <div className="row">
+          <div className="col-md-6" id="PowerTrip"></div>
+          <div className="col-md-6" id="ReadyForWinter"></div>
+        </div>
+        <div className="row">
           <div className="col-md-4" id="Jello"></div>
           <div className="col-md-4" id="Cheermageddon"></div>
           <div className="col-md-4" id="TripleBacon"></div>
-        </div>
-        <div className="row">
-          <div className="col-md-6" id="PowerTrip"></div>
-          <div className="col-md-6" id="ReadyForWinter"></div>
         </div>
         </div>
         )
