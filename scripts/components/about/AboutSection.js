@@ -7,8 +7,8 @@ var About = React.createClass({
     return (
       <div className="container-fluid about">
         <div className="row">
-          <div className="col-md-6" id="Image"></div>
-          <div className="col-md-6" id="Text"></div>
+          <div className="col-md-6" id="Image">tommy</div>
+          <div className="col-md-6" id="Text">tommy</div>
         </div>
       </div>
         )

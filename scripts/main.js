@@ -24,12 +24,6 @@ import TripleBacon from './components/TripleBacon';
 import PowerTrip from './components/PowerTrip';
 import ReadyForWinter from './components/ReadyForWinter';
 
-import About from './components/About';
-import Image from './components/Image';
-import AboutText from './components/AboutText';
-
-import Resume from './components/Resume';
-
 import hover from './hover.js';
 import fluidvids from './components/Video.js';
 import jquery from './lib/vendor/jquery.js';
