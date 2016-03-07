@@ -21,6 +21,9 @@ import Jello from './components/Jello';
 import Cheermageddon from './components/Cheermageddon';
 import TripleBacon from './components/TripleBacon';
 
+import PowerTrip from './components/PowerTrip';
+import ReadyForWinter from './components/ReadyForWinter';
+
 import hover from './hover.js';
 import fluidvids from './components/Video.js';
 import jquery from './lib/vendor/jquery.js';
