@@ -3,7 +3,7 @@ import ReactDOM  from 'react-dom';
 
 import Header from './components/Header';
 import Portfolio from './components/Portfolio';
-import DoableFooter from './components/DoableFooter';
+import JackieFooter from './components/JackieFooter';
 
 import Pantsed from './components/Pantsed';
 import InFlight from './components/InFlight';

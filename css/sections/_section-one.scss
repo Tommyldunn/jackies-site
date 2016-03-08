@@ -105,7 +105,6 @@ position: relative;
   padding-top: 10px;
 
   .hover-on & {
-    //Hide after mousemove fires
     opacity: 0;
   }
 }
@@ -139,20 +138,13 @@ position: relative;
   #about {
     height: 100vh;
     padding-top: 15em;
-    #Image{
-    }
-
     img {
       height: 380px;
-      // margin-top: 50px;
-      // margin-left: 50px;
-    }
+      }
     p {
       font-size: 18px;
+      }
     }
-    .text {
-    }
-  }
   i {
     font-size: .9em;
     color: #C3CAD9;
@@ -162,8 +154,8 @@ position: relative;
     text-align: center;
   }
 footer {
+  text-align: center;
   padding: 1% 5%;
-  text-align:center;
   background-color: #373B44;
   color: white;
 
@@ -171,5 +163,11 @@ footer {
     color: #FE4B74;
     font-weight: 500;
     text-decoration: none;
+  }
+  i {
+    color: #FE4B74;
+  }
+  .address {
+    font-size: 14px;
   }
 }
