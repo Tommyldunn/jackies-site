@@ -11,22 +11,35 @@
 
 </head>
 <body>
-  <nav class="burger">
-    <a href="#" class="burger__button" id="burger-button">
-      <span class="burger__button__icon"></span>
-    </a>
-    <ul class="burger__menu">
-      <li><a href="index.html">HOME</a></li>
-      <li><a href="#">RESUME</a></li>
-      </ul>
-  </nav>
 
+    <nav class="burger">
+      <a href="#" class="burger__button" id="burger-button">
+        <span class="burger__button__icon"></span>
+      </a>
+      <ul class="burger__menu">
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="resume.html">RESUME</a></li>
+        </ul>
+    </nav>
   <main>
-    <!-- <section id="main" class="intro"></section> -->
-    <section class="row" id="about"></section>
+    <section class="hide"></section>
+  <section id="about">
+    <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <img class="avatar" src="css/images/jackie.png" alt="jackie">
+      </div>
+      <div class="col-md-6">
+        <p>Hi, I'm Jackie Maloney and I've been a producer for 5 1/2 years.  I am dedicated to the creative process and love helping it be the best it can be. Whether that's finding a great director, spread-sheeting the hell out of some budgets, playing psychiatrist to the creatives, or putting on metaphorical boxing gloves and saying "No way am I paying for that overage."</p>
+          <p>I love to create, problem solve, and maintain a creative and passionate environment for production. I have great relationships with vendors, creatives, account services, biz affairs and clients, and am typically requested to produce more and more with each team I work with. My own style of producing has been dubbed Maloneying1 by some of my past creative teams.</p>
+        <i>1. Maloneying, The act of simultaneously balancing the hectic and multi-faceted aspects of production, keeping clients happy, creatives fulfilled, meeting deadlines and miracle-working with budgets in a synergistic burst of motivation, fun, laughter (lots of laughter) all while creating something beautiful and transcendent in the process.</i>
+      </div>
+    </div>
+    </div>
+  </section>
     <footer class="row" id="footer"></footer>
   </main>
-  <script src="/build/about/aboutmain.js"></script>
+  <script src="/scripts/hover.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 </body>
 </html>

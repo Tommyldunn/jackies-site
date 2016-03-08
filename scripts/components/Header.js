@@ -7,7 +7,7 @@ var SectionOne = React.createClass({
     return (
       <div className="row content">
         <div className="title">
-          <h1>Jackie Maloney</h1>
+          <h1>JACKIE MALONEY</h1>
           <h2>producer</h2>
         </div>
         </div>

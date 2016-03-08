@@ -5,7 +5,7 @@
 body {
   margin: 0;
   font-weight: 500;
-  font-family: 'HelveticaNeue';
+  font-family: 'Proxima Nova';
 }
 
 section {
@@ -20,9 +20,12 @@ section {
     background-color: #FE4B74;
   }
 }
+.hide {
+  display: none;
+}
 
 .intro {
-  height: 90vh;
+  height: 100vh;
 }
 
 .content {
@@ -31,7 +34,7 @@ section {
 }
 
 h1 {
-  font-size: 3em;
+  font-size: 4em;
   display: block;
   color: white;
   font-weight: 300;
@@ -113,22 +116,41 @@ position: relative;
   .title {
     font-weight: 200;
   }
+  #resume {
+    height: 100vh;
+    padding: 5em;
+    text-align: left;
+
+    h2 {
+      text-align: left;
+    }
+    h3 {
+      color: #FE4B74;
+      text-align: left;
+      text-transform: uppercase;
+    }
+    li {
+      text-align: left;
+      font-size: medium;
+      line-height: 31px;
+    color: white;
+    }
+  }
   #about {
-    height: 50vh;
-    .row {
+    height: 100vh;
+    padding-top: 15em;
+    #Image{
     }
 
     img {
-      height: 250px;
-      margin-top: 50px;
-      margin-left: 50px;
+      height: 380px;
+      // margin-top: 50px;
+      // margin-left: 50px;
     }
     p {
-      font-size: 1em;
+      font-size: 18px;
     }
     .text {
-      margin-top: 50px;
-      margin-right: 50px;
     }
   }
   i {
