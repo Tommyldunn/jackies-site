@@ -8,7 +8,7 @@ var JackieFooter = React.createClass({
         <div className="container-fluid">
           <div className="row">
             <div className="col-md-4">
-              <span className="address"> <i className="fa fa-home"></i> | 1944 Cloverfield Blvd. | Unit D | Santa Monica, CA 90404</span>
+              <span className="address"><i className="fa fa-home"></i> | Santa Monica</span>
             </div>
             <div className="col-md-4">
               <a className="mail" href="mailto:jacquelynmaloney@gmail.com"><i className="fa fa-envelope"></i></a>
