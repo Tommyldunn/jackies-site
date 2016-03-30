@@ -33,10 +33,10 @@ var App = React.createClass({
   render: function() {
     return (
       <div className="wrap">
-        <a className="" onClick={this.openModal}><img src="css/images/pantsed.png" />
+        <a className="" onClick={this.openModal}><img src="css/images/final_four.png" />
         <div className="product-hover">
-      <span className="client">Old Navy</span>
-      <span className="title">Pantsed</span>
+      <span className="client">Final Four</span>
+      <span className="title">Coaches vs. Cancer</span>
     </div>
       </a>
         <Modal className="modal"
@@ -45,7 +45,7 @@ var App = React.createClass({
         onRequestClose={this.handleModalCloseRequest}>
           <button className="close" onClick={this.closeModal}>X</button>
           <div className="tv">
-          <iframe width="100%" height="100%" src="https://www.youtube.com/embed/ciRi0J29KpI?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+          <iframe width="100%" height="100%" src="https://www.youtube.com/embed/f1wAN4SoWtk?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
           </div>
         </Modal>
       </div>
