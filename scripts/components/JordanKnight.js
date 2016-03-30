@@ -45,7 +45,7 @@ var App = React.createClass({
         onRequestClose={this.handleModalCloseRequest}>
           <button className="close" onClick={this.closeModal}>X</button>
           <div className="tv">
-          <iframe width="100%" height="100%" src="https://www.youtube.com/embed/MxiBDJSrD1k?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+          <iframe width="100%" height="100%" src="https://www.youtube.com/embed/tj2rX_tECRU?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
           </div>
         </Modal>
       </div>
