@@ -33,11 +33,11 @@ gulp.task('styles',function() {
     .pipe(gulp.dest(dest))
     .pipe(reload({stream:true}))
 });
-
-gulp.task('images',function(){
-  gulp.src('src/images/**')
-    .pipe(gulp.dest('./public/images'))
-});
+//
+// gulp.task('images',function(){
+//   gulp.src('src/images/**')
+//     .pipe(gulp.dest('./public/images'))
+// });
 
 /*
   Browser Sync
@@ -102,8 +102,8 @@ gulp.task('scripts', function() {
 
 
 // run 'scripts' task first, then watch for future changes
-gulp.task('default', ['images','styles','scripts', 'browser-sync'], function() {
-  gulp.watch('css/**/*', ['styles', 'contactstyles']); // gulp watch for sass changes
+gulp.task('default', ['styles','scripts', 'browser-sync'], function() {
+  gulp.watch('css/**/*', ['styles']); // gulp watch for sass changes
   return buildScript('main.js', true); // browserify watch for JS changes
 
 });
