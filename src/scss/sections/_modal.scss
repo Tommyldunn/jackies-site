@@ -1,0 +1,27 @@
+.tv {
+	height: 90vh;
+	width: 80vw;
+	position: relative;
+	z-index: 9;
+	margin: 0 auto;
+	border: 2px solid $grey_20;;
+	margin-top: 30px;
+}
+.modal {
+
+
+}
+.close {
+	color: #FE4B74;
+	background: transparent;
+	border: none;
+	float: right;
+    margin-top: 30px;
+    margin-right: 2.5em;
+    cursor: pointer;
+    font-size: 31px;
+    font-weight: bold;
+    display: inline-block;
+    line-height: 0px;
+    padding: 11px 3px;
+}

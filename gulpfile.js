@@ -18,53 +18,25 @@ var historyApiFallback = require('connect-history-api-fallback')
 
 
 // Include plugins
-var plugins = require("gulp-load-plugins")({
-	pattern: ['gulp-*', 'gulp.*', 'main-bower-files'],
-	replaceString: /\bgulp[\-.]/
-});
+// var plugins = require("gulp-load-plugins")({
+// 	pattern: ['gulp-*', 'gulp.*', 'main-bower-files'],
+// 	replaceString: /\bgulp[\-.]/
+// });
 
 // Define default destination folder
-var dest = 'build/public/';
+var dest = 'public/css/';
 
-/*
-  Styles Task
-*/
 gulp.task('styles',function() {
-  // move over fonts
-
-  gulp.src('css/fonts/**.*')
-    .pipe(gulp.dest('build/css/fonts'))
-
-  // Compiles CSS
-  gulp.src('css/style.scss')
+  gulp.src('src/scss/style.scss')
     .pipe(sass())
     .pipe(autoprefixer())
-    .pipe(gulp.dest('./build/css/'))
+    .pipe(gulp.dest(dest))
     .pipe(reload({stream:true}))
 });
 
-/*
-  Contact Styles Task
-*/
-
-gulp.task('contactstyles',function() {
-  // move over fonts
-  gulp.src('css/fonts/**.*')
-    .pipe(gulp.dest('build/css/fonts'))
-  // Compiles CSS
-  gulp.src('css/contact.scss')
-    .pipe(sass())
-    .pipe(autoprefixer())
-    .pipe(gulp.dest('./build/css/'))
-    .pipe(reload({stream:true}))
-});
-
-/*
-  Images
-*/
 gulp.task('images',function(){
-  gulp.src('css/images/**')
-    .pipe(gulp.dest('./build/css/images'))
+  gulp.src('src/images/**')
+    .pipe(gulp.dest('./public/images'))
 });
 
 /*
@@ -90,7 +62,7 @@ function handleErrors() {
 
 function buildScript(file, watch) {
   var props = {
-    entries: ['./scripts/' + file],
+    entries: ['./src/js/' + file],
     debug : true,
     cache: {},
     packageCache: {},
@@ -105,12 +77,12 @@ function buildScript(file, watch) {
     return stream
       .on('error', handleErrors)
       .pipe(source(file))
-      .pipe(gulp.dest('./build/'))
+      .pipe(gulp.dest('./public/js/'))
       // If you also want to uglify it
       .pipe(buffer())
       .pipe(uglify())
       .pipe(rename('app.min.js'))
-      .pipe(gulp.dest('./build'))
+      .pipe(gulp.dest('./public/js'))
       .pipe(reload({stream:true}))
   }
 
@@ -130,7 +102,7 @@ gulp.task('scripts', function() {
 
 
 // run 'scripts' task first, then watch for future changes
-gulp.task('default', ['images','styles','scripts', 'contactstyles', 'browser-sync'], function() {
+gulp.task('default', ['images','styles','scripts', 'browser-sync'], function() {
   gulp.watch('css/**/*', ['styles', 'contactstyles']); // gulp watch for sass changes
   return buildScript('main.js', true); // browserify watch for JS changes
 
